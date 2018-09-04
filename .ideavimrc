@@ -1,0 +1,31 @@
+let mapleader = ","
+set surround
+set multiple-cursors
+
+:map <leader>r :action ReformatCode<CR>
+
+
+" ---------------
+" Sounds
+" ---------------
+set noerrorbells
+set novisualbell
+set t_vb=
+
+" Copy until the end of the line
+noremap Y y$
+
+set relativenumber
+set number
+
+" Switch Panes
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" switch between last two files
+nnoremap <leader><leader> <c-^> 
+
+" Remap VIM 0 to first non-blank character
+nnoremap 0 ^
